@@ -1,0 +1,70 @@
+<html>
+<head>
+
+  <style>
+    #beacon-wrapper {
+    }
+    .beacon {
+      display: inline-block;
+      float: left;
+      width: 300px;
+      height: 300px;
+      margin: 10px;
+      border: 1px solid grey;
+      position: relative;
+      background-color: #dadada;
+    }
+    .beacon .data {
+      height: 200px;
+      background-color: white;
+      margin: 0 5px;
+      font-size: 10px;
+      font-family: courier;
+      white-space: pre;
+    }
+    .beacon .action {
+      position: absolute;
+      bottom: 0;
+      padding: 5px;
+    }
+    #control-wrapper {
+      position: absolute;
+      right: 0;
+      height: 100%;
+      width: 200px;
+      background-color: #eee;
+      border-left: 1px solid grey;
+    }
+    .beacon input.connect {
+      position: absolute;
+      top: 5px;
+      right: 5px;
+    }
+  </style>
+
+  <script src="js/thirdparty/jquery-3.1.1.js"></script>
+  <script src="js/thirdparty/underscore.js"></script>
+  <script src="js/sync.js"></script>
+</head>
+
+<body>
+
+  <div id="beacon-wrapper">
+    <div class="beacon">
+      <h3 class="title"></h3>
+      <input class="connect" type="checkbox" name="connect"/>
+      <div class="data"></div>
+      <div class="action">
+        <button class="message-button">Message</button>
+        <input class="message-text" name="message-text"/>
+      </div>
+    </div>
+  </div>
+
+  <div id="control-wrapper">
+    <div class="connect"></div>
+    <div class="log"></div>
+  </div>
+
+</body>
+</html>
