@@ -28,9 +28,16 @@ function (
 		render: function() {
 			var renderedContent = '';
 			this.collection.each( function(contact) {
-				var contactView = new ContactView({
+				var contactData = {
 					model: contact.toJSON()
-				});
+				}
+				// is this a group
+				if (contact.get('subkey')) {
+					contactData.model.fragment = 'group=' + contact.get('subkey');
+				} else {
+					contactData.model.fragment = 'user=' + contact.id;
+				}
+				var contactView = new ContactView(contactData);
 				renderedContent += contactView.render()
 			});
 			$(this.el).html(renderedContent);

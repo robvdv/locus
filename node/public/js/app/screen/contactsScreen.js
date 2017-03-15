@@ -31,18 +31,11 @@ function (
 		collection: that.contacts
 	});
 
-	//events.on('contacts:loaded', that.renderContacts);
-
-	that.fetchContacts = function() {
-		that.contacts.fetch({
-			reset: true
-		});
-	};
-
 	that.onShow = function() {
-		console.log("onShow reg");
+		/*console.log("onShow reg");
 		that.fetchContacts();
-		events.on('contact:change', that.fetchContacts);
+		events.on('contact:change', that.fetchContacts);*/
+		that.contacts.fetch();
 	};
 
 	that.displayContacts = function(contacts) {

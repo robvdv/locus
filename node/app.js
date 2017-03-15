@@ -18,13 +18,14 @@ state.stepper = {
 var startData = [
 	{
 		_id: 'group_public',
+		subkey: 'group_public',
 		type: 'contact',
 		owner: 'public',
 		display_name: 'Public Chat'
 	},
 		{
 			_id: 'group_public_welcome_chat',
-			recipientId: 'public',
+			subkey: 'group_public',
 			senderId: 'system',
 			type: 'chat',
 			owner: 'public',
@@ -32,18 +33,21 @@ var startData = [
 		},
 	{
 		_id: 'group_techhelp',
+		subkey: 'group_techhelp',
 		type: 'contact',
 		owner: 'public',
 		display_name: 'Technical Help Chat'
 	},
 	{
 		_id: 'group_emergency',
+		subkey: 'group_emergency',
 		type: 'contact',
 		owner: 'public',
 		display_name: 'Emergency Only'
 	},
 	{
 		_id: 'group_volunteer',
+		subkey: 'group_volunteer',
 		type: 'contact',
 		owner: 'public',
 		display_name: 'Volunteer'
@@ -74,14 +78,14 @@ app.post('/api/user/register', function (req, res, next) {
 	var userDetails = req.body;
 	userDetails.type = 'contact';
 	userDetails.owner = 'public';
+	userDetails.subkeys = ['group_public'];
 
 	db.insert(userDetails, function(err, body, header) {
 		if (err) {
 			console.log('[db.insert] ', err.message);
 			return;
 		}
-		console.log('you have inserted the rabbit.')
-		console.log(body);
+		console.log('Inserted a new user.');
 		var response = {
 			status: 'ok',
 			data: _.extend( userDetails, body )
@@ -90,50 +94,6 @@ app.post('/api/user/register', function (req, res, next) {
 	});
 
 });
-
-app.get('/api/db/recreate', function (req, res, next) {
-/*
-
-	nano.db.destroy(db);
-
-	db.insert(
-		{
-			"filters": {
-				"sync_user": "function(doc, req) { return doc.sync_user === req.query.owner; }"
-			}
-		}, "_design/sync_user", function(error, response) {
-			console.log('Created sync_user: ' + error);
-		}
-	);
-*/
-
-	nano.db.destroy('playa', function() {
-		// create a new database
-		nano.db.create('playa', function() {
-			// specify the database we are going to use
-			var playa = nano.use('playa');
-			// and insert a document in it
-			console.log('About to create sync_user')
-			playa.insert(
-				{
-					"filters": {
-						"sync_user": "function(doc, req) { " +
-							"return (doc.sync_user === req.query.owner) || ('public' === req.query.owner); }"
-					}
-				}, "_design/sync_user", function(error, response) {
-					console.log('Created sync_user. Error: ' + error);
-					console.log('Created sync_user. Response: ' + JSON.stringify(response));
-				}
-			);
-		});
-	});
-
-
-
-	res.send('Recreated DB');
-
-});
-
 
 app.get('/api/db/create', function (req, res, next) {
 
@@ -180,19 +140,24 @@ app.get('/api/db/filter/create', function (req, res, next) {
 			"filters": {
 				"sync_user": "function(doc, req) { " +
 
-					"return (doc._id === '_design/app') || (doc.recipientId === req.query.owner) || (doc.owner === req.query.owner) || (doc.owner === 'public');" +
+/*					"return (doc._id === '_design/app') || (doc.chatId === req.query.owner) || (doc.owner === req.query.owner) || (doc.owner === 'public');" +
+					"}"*/
+						"return (doc._id === '_design/app') || " +
+						//"((typeof doc.chatId === 'string') && (doc.chatId === req.query.owner) || (doc.chatId.indexOf(req.query.owner) !== -1)) || " +
+						"((doc.subkey) && (req.query.subkeys.indexOf(doc.subkey) !== -1)) || " +
+						"(doc.owner === req.query.owner) || (doc.recipientId === req.query.owner) || (doc.owner === 'public');" +
 					"}"
-/*
-					"return (doc._id === '_design/app') || (doc.owner === req.query.owner) || (doc.owner === 'public') ||" +
+
+
+/*					"return (doc._id === '_design/app') || (doc.owner === req.query.owner) || (doc.owner === 'public') ||" +
 					"(" +
-						"(doc.recipientId) && " +
+						"(doc.chatId) && " +
 							"(" +
-								"(typeof doc.recipientId === 'string') && (doc.recipientId === req.query.owner)" +
+								"(typeof doc.chatId === 'string') && (doc.chatId === req.query.owner)" +
 							") || " +
-							"(doc.recipientId.indexOf(req.query.owner) > -1)" +
+							"(doc.chatId.indexOf(req.query.owner) > -1)" +
 						")" +
-					"); }"
-*/
+					"); }"*/
 			}
 		}, function(error, response) {
 			res.setHeader('Content-Type', 'application/json');

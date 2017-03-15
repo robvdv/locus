@@ -51,15 +51,23 @@ function (
 	//events.on('contacts:loaded', that.renderContacts);
 
 	that.fetchChats = function() {
-		that.chats.fetch({
-			reset: true
-		});
+		that.chats.fetch(that.chatId);
 	};
 
-	that.onShow = function(id) {
+	that.onShow = function(params) {
 		console.log("onShow reg");
+
+		var paramsArr = params.split('=');
+		that.groupId = null;
+		that.userId = null;
+		if (paramsArr[0] === 'user') {
+			that.userId = paramsArr[1];
+		} else if (paramsArr[0] === 'group') {
+			that.groupId = paramsArr[1];
+		}
 		that.initialize();
-		that.chats.setRecipientId(id);
+		that.chats.setUserId(that.userId);
+		that.chats.setGroupId(that.groupId);
 		that.bindDomElements();
 		that.bindDomEvents();
 		that.fetchChats();
@@ -94,47 +102,22 @@ function (
 
 		var chatData = {
 			//_id: new Date().getTime(),
-			recipientId: that.chats.getRecipientId(),
-			senderId: account.getUserId(),
 			senderDisplayName: account.getUserName(),
 			message: message,
-			owner: account.getUserId(),  // roll into senderId or the other way around???
+			owner: account.getUserId(),
 			timestamp: new Date().getTime(),
 			type: 'chat'  // move to Model
 		};
+		that.groupId = null;
+		that.userId = null;
+
+		if (that.chats.getGroupId()) {
+			chatData.subkey = that.chats.getGroupId();
+		} else if (that.chats.getUserId()) {
+			chatData.recipientId = that.chats.getUserId();
+		}
 
 		that.chats.create(chatData, {wait: true});
-
-		//db.createDoc(chatData);
-
-/*
-
-			var url = model.get('url'),
-				pushResps = this.pushResps,
-				pullResps = this.pullResps,
-				renderStats = _.bind(this.renderStats, this);
-
-			PouchDB.replicate(dbname, url, {
-				continuous: true,
-				onChange: function(resp) {
-					pushResps[url] = resp;
-					renderStats();
-				}
-			});
-			PouchDB.replicate(url, dbname, {
-				continuous: true,
-				onChange: function(resp) {
-					pullResps[url] = resp;
-					renderStats();
-				}
-			});
-		}
-*/
-
-
-		//var chat = new Chat(chatData);
-
-		//that.chats.add(chat);
 	};
 
 	that.name = 'chat';

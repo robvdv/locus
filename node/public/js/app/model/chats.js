@@ -22,47 +22,49 @@ function (
 
 	var that = Backbone.Collection.extend({
 		model: Chat,
-		sync: BackbonePouch.sync({
-			db: db.dbLocal,
-			fetch: 'query',
-			listen: true,
-			options: {
-				query: {
-					include_docs: true,
-					fun: {
-						map: function(doc, emit) {
-							if (doc.type === CONST.data.types.chat) {
-								emit(doc.timestamp, null)
-							}
-						}
-					},
-					limit: 100
-				},
-				changes: {
-					include_docs: true,
-					continuous: true,
-					filter: function(doc) {
-						return (doc._deleted || doc.type !== CONST.data.types.chat);
-					}
-				}
+
+		initialize: function() {
+			var that = this;
+			events.on('chat:change', function(data) {
+				that.add(data.add);
+			});
+		},
+
+		fetch: function() {
+			var that = this;
+			if (this.userId) {
+				db.getChatsUser(this.userId, function(data) {
+					that.reset(data);
+				});
+			} else if (this.groupId) {
+				db.getChatsGroup(this.groupId, function(data) {
+					that.reset(data);
+				});
 			}
-		}),
+		},
+
 		parse: function(result) {
-			return _.pluck(result.rows, 'doc')
+			return result;
 		},
-		setRecipientId: function(id) {
-			this.recipientId = id;
+		setUserId: function(id) {
+			this.userId = id;
 		},
-		getRecipientId: function() {
-			return this.recipientId;
+		getUserId: function() {
+			return this.userId;
+		},
+		setGroupId: function(id) {
+			this.groupId = id;
+		},
+		getGroupId: function() {
+			return this.groupId;
 		},
 		comparator: function(chat) {
 			return chat.get('timestamp') ? chat.get('timestamp') : 0;
 		}
-
 	});
 
 	return that;
+
 });
 
 

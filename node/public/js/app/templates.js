@@ -18,7 +18,7 @@ function (
 				'</span>' +
 				'<span class="mdl-list__item-secondary-content find-on-map">' +
 					'<span class="mdl-list__item-secondary-info">Chat</span>' +
-					'<a class="mdl-list__item-secondary-action" href="#chat/<%= _id %>"><i class="material-icons">chat</i></a>' +
+					'<a class="mdl-list__item-secondary-action" href="#chat?<%= fragment %>"><i class="material-icons">chat</i></a>' +
 				'</span>' +
 			'</li>',
 

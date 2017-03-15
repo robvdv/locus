@@ -72,6 +72,10 @@ function (
 		return that.isUserLoggedIn() ? that.userDetails.username : null;
 	};
 
+	that.getSubscriptionKeys = function() {
+		return that.isUserLoggedIn() ? that.userDetails.subkeys : null;
+	};
+
 	that.userLogIn = function(credentials) {
 	};
 

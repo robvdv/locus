@@ -23,9 +23,9 @@ function (
 
 		var test = function() {
 			return (doc._id === '_design/app') || (doc.owner === req.query.owner) || (doc.owner === 'public') ||
-				((doc.recipientId) &&
-				((typeof doc.recipientId === 'string') && (doc.recipientId === req.query.owner) ||
-				(doc.recipientId.indexOf(req.query.owner) > -1)));
+				((doc.chatId) &&
+				((typeof doc.chatId === 'string') && (doc.chatId === req.query.owner) ||
+				(doc.chatId.indexOf(req.query.owner) > -1)));
 			}
 */
 
