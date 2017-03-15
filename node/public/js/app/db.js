@@ -158,18 +158,47 @@ function (
 	 }]
 	 }
 	 */
-	that.getChatsUser = function(senderId, callback) {
+/*	that.getChatsUser = function(senderId, callback) {
 		var recipientId = account.getUserId();
 		var qry = that.dbLocal.find({
 			selector: {
 				type: {$eq: CONST.data.types.chat},
-				owner: {$eq: senderId}
+				$or: [{
+					$and: [{
+						owner: {$eq: recipientId}
+					}, {
+						recipientId: {$eq: senderId}
+					}]
+				}, {
+					$and: [{
+						owner: {$eq: senderId}
+					}, {
+						recipientId: {$eq: recipientId}
+					}]
+				}]
 			}
 		}).then(function(result) {
 				callback(result.docs);
 			});
-	};
+	};*/
+	that.getChatsUser = function(senderId, callback) {
+		var recipientId = account.getUserId();
+		// optimise by storing in pouchdb!!!
+		that.dbLocal.query(function (doc, emit) {
+			if ((doc.type === CONST.data.types.chat) &&
+				(((doc.owner === recipientId) && (doc.recipientId === senderId)) ||
+				 ((doc.owner === senderId) && (doc.recipientId === recipientId))))
+			{
+				emit(doc.name, 1);
+			}
+		}, {include_docs: true}).then(function (result) {
+				callback(_.pluck(result.rows, 'doc'));
+			}).catch(function (err) {
+			// handle any errors
+		});
 
+
+	};
 	that.getChatsGroup = function(subkey, callback) {
 		var qry = that.dbLocal.find({
 			selector: {

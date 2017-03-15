@@ -2,37 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2fe5221a-53ab-49b4-bc72-7e8b8ea247d2" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Leaflet.label" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/material/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/material/bower.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/material/material.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/material/material.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/material/material.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/material/material.min.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/material/material.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/material/material.min.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/material/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mdl-dashboard/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mdl-dashboard/images/android-desktop.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mdl-dashboard/images/dog.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mdl-dashboard/images/favicon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mdl-dashboard/images/ios-desktop.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mdl-dashboard/images/user.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mdl-dashboard/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mdl-dashboard/styles.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node/public/js/app/model/pin.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node/public/js/app/model/pins.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node/public/js/app/account.js" afterPath="$PROJECT_DIR$/node/public/js/app/account.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node/app.js" afterPath="$PROJECT_DIR$/node/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node/public/js/app/model/chat.js" afterPath="$PROJECT_DIR$/node/public/js/app/model/chat.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node/public/js/app/screen/chatScreen.js" afterPath="$PROJECT_DIR$/node/public/js/app/screen/chatScreen.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node/public/js/app/model/chats.js" afterPath="$PROJECT_DIR$/node/public/js/app/model/chats.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node/public/js/app/model/contacts.js" afterPath="$PROJECT_DIR$/node/public/js/app/model/contacts.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node/public/js/app/screen/contactsScreen.js" afterPath="$PROJECT_DIR$/node/public/js/app/screen/contactsScreen.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node/public/js/app/view/contactsView.js" afterPath="$PROJECT_DIR$/node/public/js/app/view/contactsView.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node/public/js/app/db.js" afterPath="$PROJECT_DIR$/node/public/js/app/db.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node/public/js/app/templates.js" afterPath="$PROJECT_DIR$/node/public/js/app/templates.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="burnr.iws" />
@@ -52,8 +22,8 @@
     <file path="$PROJECT_DIR$/../haddock/web/src/index.html" changelist="2fe5221a-53ab-49b4-bc72-7e8b8ea247d2" time="1486567584959" ignored="false" />
     <file path="$PROJECT_DIR$/../haddock/web/src/js/main.js" changelist="2fe5221a-53ab-49b4-bc72-7e8b8ea247d2" time="1486878137274" ignored="false" />
     <file path="/render.js" changelist="2fe5221a-53ab-49b4-bc72-7e8b8ea247d2" time="1488694523916" ignored="false" />
-    <file path="/db.js" changelist="2fe5221a-53ab-49b4-bc72-7e8b8ea247d2" time="1489507815767" ignored="false" />
-    <file path="/Dummy.txt" changelist="2fe5221a-53ab-49b4-bc72-7e8b8ea247d2" time="1489472421825" ignored="false" />
+    <file path="/db.js" changelist="2fe5221a-53ab-49b4-bc72-7e8b8ea247d2" time="1489551763850" ignored="false" />
+    <file path="/Dummy.txt" changelist="2fe5221a-53ab-49b4-bc72-7e8b8ea247d2" time="1489549406688" ignored="false" />
     <file path="/test.js" changelist="2fe5221a-53ab-49b4-bc72-7e8b8ea247d2" time="1488268502418" ignored="false" />
     <file path="$PROJECT_DIR$/node/burnr/node_modules/jade/node_modules/uglify-js/node_modules/yargs/README.md" changelist="2fe5221a-53ab-49b4-bc72-7e8b8ea247d2" time="1488265885332" ignored="false" />
     <file path="$PROJECT_DIR$/node/node_modules/serialport/node_modules/node-pre-gyp/node_modules/tar-pack/node_modules/readable-stream/doc/stream.md" changelist="2fe5221a-53ab-49b4-bc72-7e8b8ea247d2" time="1488265885332" ignored="false" />
@@ -158,7 +128,7 @@
       <file leaf-file-name="db.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/node/public/js/app/db.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="171" column="32" selection-start="3265" selection-end="3265" vertical-scroll-proportion="0.44816053">
+            <state line="182" column="12" selection-start="3467" selection-end="3467" vertical-scroll-proportion="0.47324416">
               <folding />
             </state>
           </provider>
@@ -544,6 +514,11 @@
       <created>1483680274609</created>
       <updated>1483680274609</updated>
     </task>
+    <task id="LOCAL-00001" summary="Paring down&#10;">
+      <created>1489549409212</created>
+      <updated>1489549409212</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -561,6 +536,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26197183" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -616,7 +592,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" />
+    <option name="LAST_COMMIT_MESSAGE" value="Paring down&#10;" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -630,6 +606,7 @@
     <option name="UPDATE_FILTER_BY_SCOPE" value="false" />
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
+    <MESSAGE value="Paring down&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -735,7 +712,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/node/public/js/app/db.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="171" column="32" selection-start="3265" selection-end="3265" vertical-scroll-proportion="0.44816053">
+        <state line="182" column="12" selection-start="3467" selection-end="3467" vertical-scroll-proportion="0.47324416">
           <folding />
         </state>
       </provider>
