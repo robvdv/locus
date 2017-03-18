@@ -30,6 +30,7 @@ function (
 		el: '.contacts-list',
 		collection: that.contacts
 	});
+	that.showNavigation = true;
 
 	that.onShow = function() {
 		/*console.log("onShow reg");

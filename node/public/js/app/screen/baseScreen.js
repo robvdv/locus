@@ -10,7 +10,6 @@ function (
 	router
 
 ) {
-
 	var that = {};
 
 	that.screens = {};
@@ -28,11 +27,18 @@ function (
 		router.route(screen.name + '/:splat', show);
 	};
 
+
 	that.showScreen = function(screen, args) {
 		/*_.each( _.values( that.screens ), function(otherScreen) {
 			otherScreen.$el.hide();
 		});*/
+
+		if (typeof screen === 'string') {
+			screen = that.screens[screen];
+		}
+
 		$('.screen-wrapper').not(screen.$el).hide();
+		$('#menu-wrapper').toggle(screen.showNavigation);
 		screen.$el.show();
 		if (screen.onShow) {
 			screen.onShow.apply(this, args);

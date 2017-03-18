@@ -4,6 +4,7 @@ define([
 	'app/events',
 	'app/const',
 	'app/templates',
+	'app/screen/baseScreen',
 	'app/view/contactView',
 	'backbone'
 
@@ -14,11 +15,14 @@ function (
 	events,
 	CONST,
 	templates,
+	baseScreen,
 	ContactView,
 	Backbone
 ) {
 
-	var that = Backbone.View.extend({
+	var view = Backbone.View.extend({
+
+
 
 		initialize: function() {
 			this.listenTo(this.collection, "reset change", this.render);
@@ -26,25 +30,37 @@ function (
 		},
 
 		render: function() {
+			var that = this;
 			var renderedContent = '';
+			var contactViews = [];
+
 			this.collection.each( function(contact) {
-				var contactData = {
+				var contactView = new ContactView({
 					model: contact.toJSON()
-				}
-				// is this a group
-				if (contact.get('subkey')) {
-					contactData.model.fragment = 'group=' + contact.get('subkey');
-				} else {
-					contactData.model.fragment = 'user=' + contact.id;
-				}
-				var contactView = new ContactView(contactData);
-				renderedContent += contactView.render()
+				});
+				contactViews.push(contactView);
 			});
-			$(this.el).html(renderedContent);
+
+			$(this.el).empty();
+
+
+			// Render each sub-view and append it to the parent view's element.
+			_(contactViews).each(function(contactView) {
+				$(that.el).append(contactView.render());
+				// crap
+				$(that.el).find( ":last-child").on('click', function() {
+					if (contactView.model.subkey) {
+						window.location.hash = '#chat?group=' + contactView.model.subkey;
+					} else {
+						window.location.hash = '#chat?user=' + contactView.model._id;
+					}
+				});
+			});
 		}
 	});
 
-	return that;
+
+	return view;
 });
 
 

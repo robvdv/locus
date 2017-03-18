@@ -1,0 +1,87 @@
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url('fonts/MaterialIcons-Regular.eot'); /* For IE6-8 */
+  src: local('Material Icons'),
+  local('MaterialIcons-Regular'),
+  url('fonts/MaterialIcons-Regular.woff2') format('woff2'),
+  url('fonts/MaterialIcons-Regular.woff') format('woff'),
+  url('fonts/MaterialIcons-Regular.ttf') format('truetype');
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+.hidden {
+  display: none;
+}
+
+
+.chat-background {
+  background-color: silver;
+}
+
+.chat-list > * {
+  margin: 10px;
+}
+
+.chat-list .sender-user {
+  margin-left: 30px;
+  background-color: #ddffee;
+}
+
+.chat-list .sender-other {
+  margin-right: 30px;
+}
+
+.chat-wrapper {
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  border: grey;
+  background-color: white;
+}
+
+.chat-header {
+  position: relative;
+  height: 20px;
+  font-size: 12px;
+}
+
+.chat-header .chat-sender {
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: blue;
+}
+
+.chat-header .chat-time {
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: grey;
+}
+

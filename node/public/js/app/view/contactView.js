@@ -3,6 +3,7 @@ define([
 	'app/events',
 	'app/const',
 	'app/templates',
+	'app/router',
 	'backbone'
 
 ],
@@ -11,6 +12,7 @@ function (
 	events,
 	CONST,
 	templates,
+	router,
 	Backbone
 ) {
 
@@ -21,14 +23,18 @@ function (
 		className: "document-row",
 
 /*		events: {
-			"click .icon":          "open",
-			"click .button.edit":   "openEditDialog",
-			"click .button.delete": "destroy"
+			"click .title": "gotoChat"
 		},*/
+
 
 		initialize: function() {
 			this.listenTo(this.model, "change", this.render);
 		},
+
+
+/*		gotoChat: function() {
+			router.navigate(this.model.get('fragment'))
+		},*/
 
 		render: function() {
 			return templates.template.contactItem(this.model);

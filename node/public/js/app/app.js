@@ -25,6 +25,10 @@ function (
 		} else {
 			that.notLoggedIn();
 		}
+
+		if (navigator.vibrate) {
+			navigator.vibrate(1000);
+		}
 	};
 
 	that.startBackboneHistory = function() {
@@ -59,6 +63,7 @@ function (
 				registerScreen,
 				mainScreen,
 				adminScreen,
+				contactsScreen,
 				chatScreen
 				) {
 				window.location.hash = 'contacts';
@@ -66,6 +71,7 @@ function (
 			}
 		);
 	};
+
 
 	return that;
 });

@@ -39,7 +39,6 @@ function (
 			el: '.chat-list',
 			collection: that.chats
 		});
-
 		that.chats.bind('add', that.addChatToView);
 	};
 
@@ -48,24 +47,27 @@ function (
 		addMessageCallback: that.addMessage
 	});*/
 
-	//events.on('contacts:loaded', that.renderContacts);
-
 	that.fetchChats = function() {
 		that.chats.fetch(that.chatId);
 	};
 
 	that.onShow = function(params) {
 		console.log("onShow reg");
+		that.initialize();
 
 		var paramsArr = params.split('=');
 		that.groupId = null;
 		that.userId = null;
 		if (paramsArr[0] === 'user') {
 			that.userId = paramsArr[1];
+			that.chatView.setGroupChat(false);
 		} else if (paramsArr[0] === 'group') {
 			that.groupId = paramsArr[1];
+			that.chatView.setGroupChat(true);
 		}
-		that.initialize();
+
+
+		db.getEntity(paramsArr[1], that.setTitle);
 		that.chats.setUserId(that.userId);
 		that.chats.setGroupId(that.groupId);
 		that.bindDomElements();
@@ -82,6 +84,7 @@ function (
 	that.bindDomElements = function() {
 		that.$els = {};
 		that.$els.newChatText = $('#textfield_new_chat');
+		that.$els.chatTitle = $('.chat-title');
 	};
 
 	that.bindDomEvents = function() {
@@ -97,6 +100,10 @@ function (
 		}
 	};
 
+	that.setTitle = function(doc) {
+		that.$els.chatTitle.html('Chat with ' + doc.display_name);
+	};
+
 	that.createMessage = function(message) {
 		console.log('create message:' + message)
 
@@ -104,7 +111,8 @@ function (
 			//_id: new Date().getTime(),
 			senderDisplayName: account.getUserName(),
 			message: message,
-			owner: account.getUserId(),
+			senderId: account.getUserId(),
+			//owner: account.getUserId(),
 			timestamp: new Date().getTime(),
 			type: 'chat'  // move to Model
 		};

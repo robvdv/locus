@@ -20,11 +20,13 @@ function (
 
 	window.PouchDB = PouchDB;
 
+
 	that.init = function() {
 		PouchDB.plugin(pouchdbFind);
 
 		that.dbLocal = new PouchDB('playa');
-		that.dbRemote = new PouchDB('http://localhost:5984/playa');
+		//that.dbRemote = new PouchDB('http://localhost:5984/playa');
+		that.dbRemote = new PouchDB(window.location.protocol + "//" + window.location.hostname + ':5984/playa');
 
 		Backbone.Model.prototype.idAttribute = '_id';
 
@@ -181,13 +183,20 @@ function (
 				callback(result.docs);
 			});
 	};*/
-	that.getChatsUser = function(senderId, callback) {
-		var recipientId = account.getUserId();
+
+	that.getEntity = function(id, callback) {
+		that.dbLocal.get(id, function (something, doc) {
+			callback(doc);
+		})
+	};
+
+	that.getChatsUser = function(otherUserId, callback) {
+		var thisUserId = account.getUserId();
 		// optimise by storing in pouchdb!!!
 		that.dbLocal.query(function (doc, emit) {
 			if ((doc.type === CONST.data.types.chat) &&
-				(((doc.owner === recipientId) && (doc.recipientId === senderId)) ||
-				 ((doc.owner === senderId) && (doc.recipientId === recipientId))))
+				(((doc.senderId === thisUserId) && (doc.recipientId === otherUserId)) ||
+				 ((doc.senderId === otherUserId) && (doc.recipientId === thisUserId))))
 			{
 				emit(doc.name, 1);
 			}
@@ -196,18 +205,19 @@ function (
 			}).catch(function (err) {
 			// handle any errors
 		});
-
-
 	};
+
 	that.getChatsGroup = function(subkey, callback) {
-		var qry = that.dbLocal.find({
-			selector: {
-				type: {$eq: CONST.data.types.chat},
-				subkey: {$eq: subkey}
+		that.dbLocal.query(function (doc, emit) {
+			if ((doc.type === CONST.data.types.chat) && (doc.subkey === subkey))
+			{
+				emit(doc.name, 1);
 			}
-		}).then(function(result) {
-				callback(result.docs);
-			});
+		}, {include_docs: true}).then(function (result) {
+				callback(_.pluck(result.rows, 'doc'));
+			}).catch(function (err) {
+			// handle any errors
+		});
 	};
 
 	return that;

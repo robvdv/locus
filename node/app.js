@@ -6,7 +6,6 @@ var express = require('express'),
 	io = require('socket.io')(app.listen(8081)),
 	port = process.env.PORT || 4000;
 
-
 var state = {};
 
 state.messages = [];
@@ -145,7 +144,7 @@ app.get('/api/db/filter/create', function (req, res, next) {
 						"return (doc._id === '_design/app') || " +
 						//"((typeof doc.chatId === 'string') && (doc.chatId === req.query.owner) || (doc.chatId.indexOf(req.query.owner) !== -1)) || " +
 						"((doc.subkey) && (req.query.subkeys.indexOf(doc.subkey) !== -1)) || " +
-						"(doc.owner === req.query.owner) || (doc.recipientId === req.query.owner) || (doc.owner === 'public');" +
+						"(doc.owner === 'public') || (doc.senderId === req.query.owner) || (doc.recipientId === req.query.owner);" +
 					"}"
 
 

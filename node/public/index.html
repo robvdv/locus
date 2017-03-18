@@ -1,30 +1,36 @@
-<html>
+<!doctype html>
+<html class="no-js" lang="">
 <head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Playa</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+
+  <link rel="stylesheet" href="style/main.css">
+<!--
   <link rel="stylesheet" href="style/thirdparty/css.css">
   <link rel="stylesheet" href="style/thirdparty/icon.css">
   <link rel="stylesheet" href="style/thirdparty/material.cyan-light_blue.min.css">
-  <link rel="stylesheet" href="style/thirdparty/leaflet.label.css">
+-->
+
+  <link rel="stylesheet" href="style/thirdparty/materialize.css">
+
+  <!--<link rel="stylesheet" href="style/thirdparty/leaflet.label.css">-->
 
   <!--<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />-->
   <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+<!--
   <script src="js/lib/material.js"></script>
+-->
 
-<!--  <script src="js/lib/pouchdb-6.1.2.js"></script>
-  <script>
-    window.PouchDB = PouchDB;
-  </script>-->
+  <script src="js/lib/jquery-3.1.1.js"></script>
 
-<!--  <style>
-    #mapid {
-      height: 600px;
-    }
-    .map-wrapper {
-      background-color: white;
-    }
-    .leaflet-container {
-      background-color: white;
-    }
-  </style>-->
+  <script src="js/lib/materialize.js"></script>
 
   <script data-main="js/main" src="js/lib/require.js"></script>
 
@@ -34,190 +40,75 @@
 
 <!-- REGISTER FORM -->
 <div id="register-wrapper" class="screen-wrapper">
-<div class="mdl-grid" >
-  <div class="mdl-card mdl-shadow--16dp util-center util-spacing-h--40px">
-    <div class="mdl-card__title mdl-color--teal-500">
-      <h2 class="mdl-card__title-text mdl-color-text--white">Create a New Account</h2>
+
+<div class="row">
+<div class="col s12 m6">
+<div class="card blue-grey darken-1">
+<div class="card-content white-text">
+
+  <div class="row">
+    <form class="col s12">
+      <div class="row">
+        <div class="input-field col s12">
+          <i class="material-icons prefix">account_circle</i>
+          <input placeholder="Placeholder" id="textfield_new_name" type="text" class="validate" value="John">
+          <label for="textfield_new_name">What's your name?</label>
+        </div>
+      </div>
+      <div class="row hidden">
+        <div class="input-field col s12">
+          <input id="mac_address" type="text" class="validate" value="MyMac" >
+          <label for="mac_address">Mac Address</label>
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <div class="card-action">
+    <button class="btn waves-effect waves-light register" type="submit" name="action">Submit
+      <i class="material-icons right">send</i>
+    </button>
+  </div>
+
+</div>
+</div>
+</div>
+</div>
+
+</div>
+
+<div id="menu-wrapper">
+
+  <nav class="nav-extended">
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo">Playa</a>
+      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
     </div>
-    <div class="mdl-card__supporting-text mdl-grid">
-
-      <b class="mdl-color-text--accent">Error message goes here</b>
-
-      <form method="POST" action="">
-        <input type="hidden" name="action" value="register"/>
-
-        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-cell mdl-cell--12-col">
-          <label class="mdl-textfield__label mdl-color-text--grey" for="textfield_new_mac_address">MAC address</label>
-          <input class="mdl-textfield__input" type="text" id="textfield_new_mac_address" name="mac_address" value="mymac"/>
-          <span class="mdl-textfield__error">MAC address error</span>
-        </div>
-
-        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-cell mdl-cell--12-col">
-          <label class="mdl-textfield__label mdl-color-text--grey" for="textfield_new_name">Name</label>
-          <input class="mdl-textfield__input" type="text" id="textfield_new_name" name="name" pattern="^[a-z A-Z0-9'_-]{3,30}$" value="John Doe"/>
-          <span class="mdl-textfield__error">3-15 characters with only letters, digits, underscore, inverted comma and hyphen</span>
-        </div>
-
-        <div class="mdl-cell mdl-cell--12-col send-button" align="center">
-          <button class="mdl-button mdl-js-ripple-effect mdl-js-button mdl-button--raised mdl-button--colored register">
-            Register
-          </button>
-        </div>
-      </form>
+    <div class="nav-content">
+      <ul class="tabs tabs-transparent">
+        <li class="tab"><a href="#contacts" class="active">Contacts</a></li>
+        <li class="tab"><a href="#chats">Chats</a></li>
+        <li class="tab"><a href="#map">Map</a></li>
+      </ul>
     </div>
-  </div>
-</div>
-</div>
+  </nav>
 
-<div id="contacts-wrapper" class="screen-wrapper">
-
-  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-
-    <header class="mdl-layout__header">
-      <div class="mdl-layout__header-row">
-        <!-- Title -->
-        <span class="mdl-layout-title">Playa</span>
-      </div>
-      <div class="mdl-layout__header-row">
-        <nav class="mdl-navigation">
-          <a class="mdl-navigation__link" href="#contacts">Contacts</a>
-          <a class="mdl-navigation__link" href="#chat">Chat</a>
-          <a class="mdl-navigation__link" href="#map">Map</a>
-        </nav>
-      </div>
-
-    </header>
-
-    <main class="mdl-layout__content">
-      <div class="page-content">
-        <ul class="demo-list-two mdl-list contacts-list">
-        </ul>
-      </div>
-    </main>
-
+  <div id="contacts-wrapper" class="screen-wrapper">
+    <ul class="collection contacts-list"></ul>
   </div>
 
-</div>
-
-<div id="chats-wrapper" class="screen-wrapper">
-
-  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-
-    <header class="mdl-layout__header">
-      <div class="mdl-layout__header-row">
-        <!-- Title -->
-        <span class="mdl-layout-title">Playa</span>
-      </div>
-      <div class="mdl-layout__header-row">
-        <nav class="mdl-navigation">
-          <a class="mdl-navigation__link" href="#contacts">Contacts</a>
-          <a class="mdl-navigation__link" href="#chats">Chats</a>
-          <a class="mdl-navigation__link" href="#map">Map</a>
-        </nav>
-      </div>
-
-    </header>
-
-    <main class="mdl-layout__content">
-      <div class="page-content">
-        <ul class="demo-list-two mdl-list chats-list">
-        </ul>
-      </div>
-    </main>
-
+  <div id="chats-wrapper" class="screen-wrapper">
+    <ul class="collection chats-list"></ul>
   </div>
 
+  <div id="map-wrapper" class="screen-wrapper">
+    map
+  </div>
 </div>
-
 
 <div id="chat-wrapper" class="screen-wrapper">
-
-  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-
-    <header class="mdl-layout__header">
-      <div class="mdl-layout__header-row">
-        <!-- Title -->
-        <span class="mdl-layout-title">Playa</span>
-      </div>
-      <div class="mdl-layout__header-row">
-        <span>Chat with Tom</span>
-      </div>
-
-    </header>
-
-    <main class="mdl-layout__content">
-      <div class="page-content">
-        <ul class="demo-list-two mdl-list chat-list">
-        </ul>
-      </div>
-    </main>
-
-    <footer class="mdl-mega-footer" >
-      <div class="mdl-textfield mdl-js-textfield mdl-cell mdl-cell--12-col">
-        <input class="mdl-textfield__input" type="text" id="textfield_new_chat" name="chat"/>
-      </div>
-    </footer>
-
-  </div>
-
-</div>
-
-<div id="main-wrapper" class="screen-wrapper">
-<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-  <header class="mdl-layout__header">
-    <div class="mdl-layout__header-row">
-      <!-- Title -->
-      <span class="mdl-layout-title">Playa</span>
-    </div>
-    <div class="mdl-layout__header-row">
-      <nav class="mdl-navigation">
-        <a class="mdl-navigation__link" href="#contacts">Contacts</a>
-        <a class="mdl-navigation__link" href="#chats">Chats</a>
-        <a class="mdl-navigation__link" href="#map">Map</a>
-      </nav>
-    </div>
-
-  </header>
-
-  <main class="mdl-layout__content">
-    <!-- Panel 1 -->
-    <section class="mdl-layout__tab-panel" id="contacts-wrapper">
-      <div class="page-content">
-
-        <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable">
-          <label class="mdl-button mdl-js-button mdl-button--icon" for="text8">
-            <i class="material-icons">search</i>
-          </label>
-          <div class="mdl-textfield__expandable-holder">
-            <input class="mdl-textfield__input" type="text" id="text8">
-            <label class="mdl-textfield__label" for="sample-expandable">Expandable Input</label>
-          </div>
-        </div>
-
-        <ul class="demo-list-two mdl-list contacts-list">
-        </ul>
-      </div>
-    </section>
-
-    <!-- Panel 2 -->
-    <section class="mdl-layout__tab-panel is-active" id="fixed-tab-2">
-      <div class="page-content">
-        <div id="chat-wrapper"></div>
-      </div>
-    </section>
-
-    <!-- Panel 3 -->
-    <section class="mdl-layout__tab-panel" id="map-tab-3">
-      <div class="page-content">
-
-        <div class="map-wrapper">
-          <div id="mapid"></div>
-        </div>
-
-      </div>
-    </section>
-  </main>
-</div>
+  <ul class="collection chat-list">
+  </ul>
 </div>
 
 </body>

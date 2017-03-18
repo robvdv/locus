@@ -11,6 +11,7 @@ function (
 	api
 ) {
 
+
 	var that = {};
 
 	var storageKey = {
@@ -69,7 +70,7 @@ function (
 	};
 
 	that.getUserName = function() {
-		return that.isUserLoggedIn() ? that.userDetails.username : null;
+		return that.isUserLoggedIn() ? that.userDetails.display_name : null;
 	};
 
 	that.getSubscriptionKeys = function() {
