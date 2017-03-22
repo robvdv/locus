@@ -37,9 +37,11 @@ function (
 			screen = that.screens[screen];
 		}
 
-		$('.screen-wrapper').not(screen.$el).hide();
+        // replace/move to router.execute
+
+/*		$('.screen-wrapper').not(screen.$el).hide();
 		$('#menu-wrapper').toggle(screen.showNavigation);
-		screen.$el.show();
+		screen.$el.show();*/
 		if (screen.onShow) {
 			screen.onShow.apply(this, args);
 		}

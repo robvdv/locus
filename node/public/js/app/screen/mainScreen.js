@@ -43,7 +43,7 @@ function (
 
 	that.bindDomElements = function() {
 		that.$els = {};
-		that.$els.menuWrapper = $('#menu-wrapper');
+		that.$els.menuWrapper = $('header');
 		that.$els.tabs = that.$els.menuWrapper.find('ul.tabs');
 
 		/*$("a[href='#contacts']")

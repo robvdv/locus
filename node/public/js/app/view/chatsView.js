@@ -1,6 +1,7 @@
 define([
 	'jquery',
 	'underscore',
+    'app/util',
 	'app/events',
 	'app/const',
 	'app/templates',
@@ -12,6 +13,7 @@ define([
 function (
 	$,
 	_,
+    util,
 	events,
 	CONST,
 	templates,
@@ -31,23 +33,17 @@ function (
 			this.isGroupChat = isGroup;
 		},
 
+        scrollToEndOfMessages: function() {
+            $('main').scrollTop(this.$el.height());
+        },
+
 		render: function() {
 			var renderedContent = '';
 			var isGroupChat = this.isGroupChat;
 			this.collection.each( function(chat) {
 				var model = chat.toJSON();
-				if (model.timestamp) {
-					var time = new Date(model.timestamp);
-					model.chatDisplayTime = time.getHours() + ':' + time.getMinutes();
-				} else {
-					model.chatDisplayTime = '';
-				}
 
-				if (chat.get("senderId") === account.getUserId()) {
-					model.senderClass = "sender-user";
-				} else {
-					model.senderClass = "sender-other";
-				}
+
 
 
 				var chatView = new ChatView({
@@ -57,6 +53,7 @@ function (
 				renderedContent += chatView.render()
 			});
 			$(this.el).html(renderedContent);
+            this.scrollToEndOfMessages();
 		}
 	});
 

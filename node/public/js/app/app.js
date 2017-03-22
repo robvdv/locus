@@ -57,17 +57,21 @@ function (
 			'app/screen/mainScreen',
 			'app/screen/adminScreen',
 			'app/screen/contactsScreen',
-			'app/screen/chatScreen'
+            'app/screen/chatScreen',
+            'app/screen/chatsScreen',
+            'app/screen/mapScreen'
 		],
 			function (
 				registerScreen,
 				mainScreen,
 				adminScreen,
 				contactsScreen,
-				chatScreen
+                chatScreen,
+                chatsScreen,
+                mapScreen
 				) {
-				window.location.hash = 'contacts';
-				that.startBackboneHistory();
+
+				    that.startBackboneHistory();
 			}
 		);
 	};

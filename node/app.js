@@ -3,6 +3,8 @@ var express = require('express'),
 	app = express(),
 	nano = require('nano')('http://localhost:5984'),
 	bodyParser = require('body-parser'),
+    httpProxy = require('http-proxy'),
+    apiProxy = httpProxy.createProxyServer(),
 	io = require('socket.io')(app.listen(8081)),
 	port = process.env.PORT || 4000;
 
@@ -211,6 +213,11 @@ function serialConnect() {
 }
 
 serialConnect();
+
+app.all("/playa/*", function(req, res) {
+    console.log('redirecting to Server1');
+    apiProxy.web(req, res, {target: 'http://localhost:5984/playa/'});
+});
 
 
 app.use(express.static(__dirname + '/public'));

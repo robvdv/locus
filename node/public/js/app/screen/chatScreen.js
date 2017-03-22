@@ -66,7 +66,6 @@ function (
 			that.chatView.setGroupChat(true);
 		}
 
-
 		db.getEntity(paramsArr[1], that.setTitle);
 		that.chats.setUserId(that.userId);
 		that.chats.setGroupId(that.groupId);
@@ -83,25 +82,27 @@ function (
 
 	that.bindDomElements = function() {
 		that.$els = {};
-		that.$els.newChatText = $('#textfield_new_chat');
-		that.$els.chatTitle = $('.chat-title');
+		that.$els.newChatText = $('#chat-input');
+		that.$els.chatTitle = $('#chat-title');
 	};
 
 	that.bindDomEvents = function() {
 		that.$els.newChatText.on('keyup', that.messageKeyUp);
 	};
 
+
 	that.messageKeyUp = function(event) {
 		if (event.keyCode == 13) {
 			if (that.$els.newChatText.val().length > 0) {
 				that.createMessage(that.$els.newChatText.val());
 				that.$els.newChatText.val('');
+                that.chatView.scrollToEndOfMessages();
 			}
 		}
 	};
 
 	that.setTitle = function(doc) {
-		that.$els.chatTitle.html('Chat with ' + doc.display_name);
+		that.$els.chatTitle.html(doc.display_name);
 	};
 
 	that.createMessage = function(message) {

@@ -19,6 +19,7 @@ function (
 		register: function(event) {
 			event.stopPropagation();
 			account.userRegister(this.serialize());
+            window.location.hash = 'contacts';
 			return false;
 		},
 

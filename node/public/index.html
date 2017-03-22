@@ -38,8 +38,34 @@
 
 <body>
 
+<header class="screen-header toggle-screen toggle-screen-contacts toggle-screen-chat toggle-screen-chats toggle-screen-map">
+    <nav class="nav-wrapper  toggle-screen toggle-screen-chat">
+        <a id="chat-title" href="#" class="brand-logo center">Logo</a>
+        <ul id="nav-mobile" class="left">
+            <li><a href="#contacts"><i class="material-icons rotate-180">play_arrow</i></a></li>
+        </ul>
+    </nav>
+
+    <nav class="nav-extended screen-header toggle-screen toggle-screen-contacts toggle-screen-chats toggle-screen-map">
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo">Playa</a>
+            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+        </div>
+        <div class="nav-content">
+            <ul class="tabs tabs-transparent">
+                <li class="tab"><a href="#contacts" class="active">Contacts</a></li>
+                <li class="tab"><a href="#chats">Chats</a></li>
+                <li class="tab"><a href="#map">Map</a></li>
+            </ul>
+        </div>
+    </nav>
+
+</header>
+
+<main>
+
 <!-- REGISTER FORM -->
-<div id="register-wrapper" class="screen-wrapper">
+<div id="register-wrapper" class="screen-wrapper toggle-screen toggle-screen-register">
 
 <div class="row">
 <div class="col s12 m6">
@@ -77,39 +103,35 @@
 
 </div>
 
-<div id="menu-wrapper">
-
-  <nav class="nav-extended">
-    <div class="nav-wrapper">
-      <a href="#" class="brand-logo">Playa</a>
-      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-    </div>
-    <div class="nav-content">
-      <ul class="tabs tabs-transparent">
-        <li class="tab"><a href="#contacts" class="active">Contacts</a></li>
-        <li class="tab"><a href="#chats">Chats</a></li>
-        <li class="tab"><a href="#map">Map</a></li>
-      </ul>
-    </div>
-  </nav>
-
-  <div id="contacts-wrapper" class="screen-wrapper">
-    <ul class="collection contacts-list"></ul>
-  </div>
-
-  <div id="chats-wrapper" class="screen-wrapper">
-    <ul class="collection chats-list"></ul>
-  </div>
-
-  <div id="map-wrapper" class="screen-wrapper">
-    map
-  </div>
+<div id="contacts-wrapper" class="screen-wrapper toggle-screen toggle-screen-contacts">
+<ul class="collection contacts-list"></ul>
 </div>
 
-<div id="chat-wrapper" class="screen-wrapper">
+<div id="chats-wrapper" class="screen-wrapper toggle-screen toggle-screen-chats">
+<ul class="collection chats-list"></ul>
+</div>
+
+<div id="map-wrapper" class="screen-wrapper toggle-screen toggle-screen-map">
+map
+</div>
+
+<div id="chat-wrapper" class="screen-wrapper toggle-screen toggle-screen-chat">
   <ul class="collection chat-list">
   </ul>
 </div>
 
+</main>
+
+<footer class="page-footer nopadding screen-footer toggle-screen toggle-screen-chat">
+    <div class="container">
+        <div class="">
+            <div class="col l6 s12">
+                <textarea id="chat-input" placeholder="Type message here..." class="materialize-textarea"></textarea>
+            </div>
+        </div>
+    </div>
+</footer>
+
 </body>
+
 </html>

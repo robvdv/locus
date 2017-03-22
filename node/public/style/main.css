@@ -40,6 +40,93 @@
   display: none;
 }
 
+.rotate-180 {
+  -webkit-transform: rotate(180deg);
+}
+
+.nopadding {
+  padding: 0 !important;
+}
+
+.toggle-screen {
+  display: none;
+}
+
+header {
+  flex: 0 0 auto;
+}
+
+.screen-footer {
+/*  position: fixed;
+  bottom: 0;
+  width:100%;*/
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+  position: relative;/* need this to position inner content */
+  overflow-y: auto;
+}
+
+footer {
+  flex: 0 0 auto;
+  background-color: #dcdcdc;
+}
+
+body.toggle-screen-chat .toggle-screen-chat {
+  display: block;
+}
+
+
+body.toggle-screen-chats .toggle-screen-chats {
+  display: block;
+}
+
+body.toggle-screen-register .toggle-screen-register {
+  display: block;
+}
+
+body.toggle-screen-contacts .toggle-screen-contacts {
+  display: block;
+}
+
+body.toggle-screen-map .toggle-screen-map {
+  display: block;
+}
+
+
+
+
+
+/*body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}*/
+
+.page-flexbox-wrapper {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 1 auto;
+}
 
 .chat-background {
   background-color: silver;
@@ -47,6 +134,8 @@
 
 .chat-list > * {
   margin: 10px;
+  box-shadow: 0px 0px 6px #B2B2B2;
+  padding: 5px 10px;
 }
 
 .chat-list .sender-user {
@@ -56,6 +145,7 @@
 
 .chat-list .sender-other {
   margin-right: 30px;
+  background-color: #ffeeee;
 }
 
 .chat-wrapper {
@@ -69,13 +159,13 @@
   position: relative;
   height: 20px;
   font-size: 12px;
+  color: #555;
 }
 
 .chat-header .chat-sender {
   position: absolute;
   left: 0;
   top: 0;
-  color: blue;
 }
 
 .chat-header .chat-time {
@@ -85,3 +175,13 @@
   color: grey;
 }
 
+#chat-input {
+  min-height: 1rem;
+  height: 20px;
+  padding: 0.5rem 0;
+  margin: 0.5rem 0;
+}
+
+#contacts-wrapper .collection .collection-item.avatar {
+  min-height: 40px;
+}

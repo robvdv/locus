@@ -2,7 +2,9 @@ define([
 	'underscore',
 	'app/events',
 	'app/const',
+    'app/util',
 	'app/templates',
+    'app/account',
 	'backbone'
 
 ],
@@ -10,7 +12,9 @@ function (
 	_,
 	events,
 	CONST,
+    util,
 	templates,
+    account,
 	Backbone
 ) {
 
@@ -37,6 +41,17 @@ function (
 
 
 		render: function() {
+            if (this.model.senderId === account.getUserId()) {
+                this.model.senderClass = "sender-user";
+            } else {
+                this.model.senderClass = "sender-other";
+            }
+            if (this.model.timestamp) {
+                var time = new Date(this.model.timestamp);
+                this.model.chatDisplayTime = util.format.shortTime(this.model.timestamp);
+            } else {
+                this.model.chatDisplayTime = '';
+            }
 			if (this.isGroupChat) {
 				return templates.template.chatWithGroupItem(this.model);
 			} else {
