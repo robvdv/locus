@@ -24,7 +24,7 @@
     <file path="$PROJECT_DIR$/../haddock/web/src/js/main.js" changelist="2fe5221a-53ab-49b4-bc72-7e8b8ea247d2" time="1486878137274" ignored="false" />
     <file path="/render.js" changelist="2fe5221a-53ab-49b4-bc72-7e8b8ea247d2" time="1488694523916" ignored="false" />
     <file path="/db.js" changelist="2fe5221a-53ab-49b4-bc72-7e8b8ea247d2" time="1489645901007" ignored="false" />
-    <file path="/Dummy.txt" changelist="2fe5221a-53ab-49b4-bc72-7e8b8ea247d2" time="1490544829194" ignored="false" />
+    <file path="/Dummy.txt" changelist="2fe5221a-53ab-49b4-bc72-7e8b8ea247d2" time="1490556140038" ignored="false" />
     <file path="/test.js" changelist="2fe5221a-53ab-49b4-bc72-7e8b8ea247d2" time="1488268502418" ignored="false" />
     <file path="$PROJECT_DIR$/node/burnr/node_modules/jade/node_modules/uglify-js/node_modules/yargs/README.md" changelist="2fe5221a-53ab-49b4-bc72-7e8b8ea247d2" time="1488265885332" ignored="false" />
     <file path="$PROJECT_DIR$/node/node_modules/serialport/node_modules/node-pre-gyp/node_modules/tar-pack/node_modules/readable-stream/doc/stream.md" changelist="2fe5221a-53ab-49b4-bc72-7e8b8ea247d2" time="1488265885332" ignored="false" />
@@ -129,10 +129,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/node/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="71" column="67" selection-start="1613" selection-end="1613" vertical-scroll-proportion="0.47397768">
+            <state line="232" column="0" selection-start="5634" selection-end="5634" vertical-scroll-proportion="-18.52">
               <folding>
                 <element signature="e#545#1316#0" expanded="false" />
               </folding>
@@ -149,10 +149,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="db.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="db.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/node/public/js/app/db.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="102" selection-start="620" selection-end="620" vertical-scroll-proportion="-4.8">
+            <state line="28" column="8" selection-start="417" selection-end="417" vertical-scroll-proportion="0.19516729">
               <folding />
             </state>
           </provider>
@@ -244,8 +244,8 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/node/public/js/admin.js" />
         <option value="$PROJECT_DIR$/node/playa.js" />
-        <option value="$PROJECT_DIR$/node/public/js/app/db.js" />
         <option value="$PROJECT_DIR$/node/app.js" />
+        <option value="$PROJECT_DIR$/node/public/js/app/db.js" />
       </list>
     </option>
   </component>
@@ -742,7 +742,11 @@
       <created>1490544830533</created>
       <updated>1490544830533</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Trying to proxy still">
+      <created>1490556141441</created>
+      <updated>1490556141441</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -816,7 +820,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Trying to proxy" />
+    <option name="LAST_COMMIT_MESSAGE" value="Trying to proxy still" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -833,6 +837,7 @@
     <MESSAGE value="Paring down&#10;" />
     <MESSAGE value="Fix chat query" />
     <MESSAGE value="Trying to proxy" />
+    <MESSAGE value="Trying to proxy still" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -936,19 +941,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/node/public/js/app/db.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="102" selection-start="620" selection-end="620" vertical-scroll-proportion="-4.8">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="71" column="67" selection-start="1613" selection-end="1613" vertical-scroll-proportion="0.47397768">
+        <state line="232" column="0" selection-start="5634" selection-end="5634" vertical-scroll-proportion="-18.52">
           <folding>
             <element signature="e#545#1316#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node/public/js/app/db.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="8" selection-start="417" selection-end="417" vertical-scroll-proportion="0.19516729">
+          <folding />
         </state>
       </provider>
     </entry>

@@ -61,9 +61,9 @@ var startData = [
 ];
 
 var db = nano.db.use('playa');
-
+/*
 // wherever your db lives
-var DATABASE_URL = 'http://localhost:5984';
+var DATABASE_URL = 'http://localhost:5984/playa';
 
 // middleware itself, preceding any parsers
 app.use(function(req, res, next){
@@ -79,7 +79,7 @@ app.use(function(req, res, next){
 	} else {
 		next();
 	}
-});
+});*/
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
@@ -218,15 +218,16 @@ function serialConnect() {
 
 serialConnect();
 
-var httpServer = http.createServer(function (req, res) {
+/*var httpServer = http.createServer(function (req, res) {
 	//res.writeHead(301, { "Location": "https://" + req.headers['host'] + req.url });
 	res.writeHead(301, { "Location": "https://localhost:443" });
 	res.end();
 }).listen(80);
 
-var httpsServer = https.createServer(credentials, app);
+var httpsServer = https.createServer(credentials, app);*/
 
-httpsServer.listen(443);
+//httpsServer.listen(443);
 
 app.use(express.static(__dirname + '/public'));
 //app.listen(port);
+app.listen(80);

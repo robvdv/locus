@@ -26,8 +26,8 @@ function (
 
 		that.dbLocal = new PouchDB('playa');
 		//that.dbRemote = new PouchDB('http://localhost:5984/playa');
-		//that.dbRemote = new PouchDB(window.location.protocol + "//" + window.location.hostname + ':5984/playa');
-		that.dbRemote = new PouchDB(window.location.protocol + "//" + window.location.hostname + '/db/playa');
+		that.dbRemote = new PouchDB(window.location.protocol + "//" + window.location.hostname + ':5984/playa');
+		//that.dbRemote = new PouchDB(window.location.protocol + "//" + window.location.hostname + '/db/playa');
 
 		Backbone.Model.prototype.idAttribute = '_id';
 
