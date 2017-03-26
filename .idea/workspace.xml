@@ -2,18 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2fe5221a-53ab-49b4-bc72-7e8b8ea247d2" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node/public/js/admin.js" afterPath="$PROJECT_DIR$/node/public/js/admin.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node/app.js" afterPath="$PROJECT_DIR$/node/app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node/public/js/app/db.js" afterPath="$PROJECT_DIR$/node/public/js/app/db.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node/playa.js" afterPath="$PROJECT_DIR$/node/playa.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="burnr.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/style.css" changelist="2fe5221a-53ab-49b4-bc72-7e8b8ea247d2" time="1483681324723" ignored="false" />
     <file path="/index.html" changelist="2fe5221a-53ab-49b4-bc72-7e8b8ea247d2" time="1489757956127" ignored="false" />
-    <file path="/app.js" changelist="2fe5221a-53ab-49b4-bc72-7e8b8ea247d2" time="1490544114239" ignored="false" />
+    <file path="/app.js" changelist="2fe5221a-53ab-49b4-bc72-7e8b8ea247d2" time="1490555410059" ignored="false" />
     <file path="/main.js" changelist="2fe5221a-53ab-49b4-bc72-7e8b8ea247d2" time="1488712223462" ignored="false" />
     <file path="/johnny.html" changelist="2fe5221a-53ab-49b4-bc72-7e8b8ea247d2" time="1483855192860" ignored="false" />
     <file path="/johnny.js" changelist="2fe5221a-53ab-49b4-bc72-7e8b8ea247d2" time="1483855260937" ignored="false" />
@@ -27,7 +24,7 @@
     <file path="$PROJECT_DIR$/../haddock/web/src/js/main.js" changelist="2fe5221a-53ab-49b4-bc72-7e8b8ea247d2" time="1486878137274" ignored="false" />
     <file path="/render.js" changelist="2fe5221a-53ab-49b4-bc72-7e8b8ea247d2" time="1488694523916" ignored="false" />
     <file path="/db.js" changelist="2fe5221a-53ab-49b4-bc72-7e8b8ea247d2" time="1489645901007" ignored="false" />
-    <file path="/Dummy.txt" changelist="2fe5221a-53ab-49b4-bc72-7e8b8ea247d2" time="1489822743060" ignored="false" />
+    <file path="/Dummy.txt" changelist="2fe5221a-53ab-49b4-bc72-7e8b8ea247d2" time="1490544829194" ignored="false" />
     <file path="/test.js" changelist="2fe5221a-53ab-49b4-bc72-7e8b8ea247d2" time="1488268502418" ignored="false" />
     <file path="$PROJECT_DIR$/node/burnr/node_modules/jade/node_modules/uglify-js/node_modules/yargs/README.md" changelist="2fe5221a-53ab-49b4-bc72-7e8b8ea247d2" time="1488265885332" ignored="false" />
     <file path="$PROJECT_DIR$/node/node_modules/serialport/node_modules/node-pre-gyp/node_modules/tar-pack/node_modules/readable-stream/doc/stream.md" changelist="2fe5221a-53ab-49b4-bc72-7e8b8ea247d2" time="1488265885332" ignored="false" />
@@ -132,10 +129,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="app.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/node/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="62" column="72" selection-start="1349" selection-end="1349" vertical-scroll-proportion="-4.8">
+            <state line="71" column="67" selection-start="1613" selection-end="1613" vertical-scroll-proportion="0.47397768">
               <folding>
                 <element signature="e#545#1316#0" expanded="false" />
               </folding>
@@ -152,10 +149,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="db.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="db.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/node/public/js/app/db.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="51" column="74" selection-start="1152" selection-end="1152" vertical-scroll-proportion="0.3345725">
+            <state line="29" column="102" selection-start="620" selection-end="620" vertical-scroll-proportion="-4.8">
               <folding />
             </state>
           </provider>
@@ -741,7 +738,11 @@
       <created>1489822780424</created>
       <updated>1489822780424</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Trying to proxy">
+      <created>1490544830533</created>
+      <updated>1490544830533</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -815,7 +816,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix chat query" />
+    <option name="LAST_COMMIT_MESSAGE" value="Trying to proxy" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -831,6 +832,7 @@
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
     <MESSAGE value="Paring down&#10;" />
     <MESSAGE value="Fix chat query" />
+    <MESSAGE value="Trying to proxy" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -906,13 +908,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/node/playa.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="0" selection-start="316" selection-end="529" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node/public/js/app/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="27" selection-start="166" selection-end="166" vertical-scroll-proportion="0.0">
@@ -934,19 +929,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/node/app.js">
+    <entry file="file://$PROJECT_DIR$/node/playa.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="72" selection-start="1349" selection-end="1349" vertical-scroll-proportion="-4.8">
-          <folding>
-            <element signature="e#545#1316#0" expanded="false" />
-          </folding>
+        <state line="10" column="0" selection-start="316" selection-end="529" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/node/public/js/app/db.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="74" selection-start="1152" selection-end="1152" vertical-scroll-proportion="0.3345725">
+        <state line="29" column="102" selection-start="620" selection-end="620" vertical-scroll-proportion="-4.8">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="71" column="67" selection-start="1613" selection-end="1613" vertical-scroll-proportion="0.47397768">
+          <folding>
+            <element signature="e#545#1316#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

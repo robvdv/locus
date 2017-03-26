@@ -63,15 +63,15 @@ var startData = [
 var db = nano.db.use('playa');
 
 // wherever your db lives
-var DATABASE_URL = 'http://localhost:5984/playa';
+var DATABASE_URL = 'http://localhost:5984';
 
 // middleware itself, preceding any parsers
 app.use(function(req, res, next){
-	var proxy_path = req.path.match(/^\/playa(.*)$/);
-	console.log('req.path :'  + req.path);
-	console.log(proxy_path);
+	var proxy_path = req.path.match(/^\/db(.*)$/);
+	console.log('Received req.path :'  + req.path);
 	if(proxy_path){
 		var db_url = DATABASE_URL + proxy_path[1];
+		console.log("Transposed to: " + db_url)
 		req.pipe(request({
 			uri: db_url,
 			method: req.method
