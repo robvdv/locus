@@ -1,12 +1,17 @@
 var express = require('express'),
 	_ = require('underscore'),
 	app = express(),
+	request = require('request'),
 	nano = require('nano')('http://localhost:5984'),
 	bodyParser = require('body-parser'),
-    httpProxy = require('http-proxy'),
-    apiProxy = httpProxy.createProxyServer(),
-	io = require('socket.io')(app.listen(8081)),
-	port = process.env.PORT || 4000;
+	fs = require('fs');
+
+var https = require('https');
+var http = require('http');
+
+var privateKey  = fs.readFileSync('ssl/privkey.pem', 'utf8');
+var certificate = fs.readFileSync('ssl/cert.pem', 'utf8');
+var credentials = {key: privateKey, cert: certificate};
 
 var state = {};
 
@@ -55,9 +60,26 @@ var startData = [
 	}
 ];
 
-
-
 var db = nano.db.use('playa');
+
+// wherever your db lives
+var DATABASE_URL = 'http://localhost:5984/playa';
+
+// middleware itself, preceding any parsers
+app.use(function(req, res, next){
+	var proxy_path = req.path.match(/^\/playa(.*)$/);
+	console.log('req.path :'  + req.path);
+	console.log(proxy_path);
+	if(proxy_path){
+		var db_url = DATABASE_URL + proxy_path[1];
+		req.pipe(request({
+			uri: db_url,
+			method: req.method
+		})).pipe(res);
+	} else {
+		next();
+	}
+});
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
@@ -114,24 +136,6 @@ app.get('/api/db/destroy', function (req, res, next) {
 	});
 
 });
-/*
-
-app.get('/api/db/filter/create', function (req, res, next) {
-	var playa = nano.use('playa');
-	playa.insert(
-		{
-			_id: "_design/app",
-			"filters": {
-				"sync_user": "function(doc, req) { " +
-					"return (doc._id === '_design/app') || (doc.owner === req.query.owner) || (doc.owner === 'public'); }"
-			}
-		}, function(error, response) {
-			res.setHeader('Content-Type', 'application/json');
-			res.send(JSON.stringify(arguments));
-		}
-	);
-});
-*/
 
 app.get('/api/db/filter/create', function (req, res, next) {
 	var playa = nano.use('playa');
@@ -214,11 +218,15 @@ function serialConnect() {
 
 serialConnect();
 
-app.all("/playa/*", function(req, res) {
-    console.log('redirecting to Server1');
-    apiProxy.web(req, res, {target: 'http://localhost:5984/playa/'});
-});
+var httpServer = http.createServer(function (req, res) {
+	//res.writeHead(301, { "Location": "https://" + req.headers['host'] + req.url });
+	res.writeHead(301, { "Location": "https://localhost:443" });
+	res.end();
+}).listen(80);
 
+var httpsServer = https.createServer(credentials, app);
+
+httpsServer.listen(443);
 
 app.use(express.static(__dirname + '/public'));
-app.listen(port);
+//app.listen(port);

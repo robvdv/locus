@@ -2,61 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2fe5221a-53ab-49b4-bc72-7e8b8ea247d2" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node/public/style/fonts/MaterialIcons-Regular.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node/public/style/fonts/MaterialIcons-Regular.woff2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node/public/style/fonts/MaterialIcons-Regular.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node/public/style/fonts/roboto/Roboto-Bold.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node/public/style/fonts/roboto/Roboto-Bold.woff2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node/public/style/fonts/roboto/Roboto-Bold.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node/public/style/fonts/roboto/Roboto-Light.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node/public/style/fonts/roboto/Roboto-Light.woff2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node/public/style/fonts/roboto/Roboto-Light.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node/public/style/fonts/roboto/Roboto-Medium.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node/public/style/fonts/roboto/Roboto-Medium.woff2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node/public/style/fonts/roboto/Roboto-Medium.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node/public/style/fonts/roboto/Roboto-Regular.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node/public/style/fonts/roboto/Roboto-Regular.woff2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node/public/style/fonts/roboto/Roboto-Regular.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node/public/style/fonts/roboto/Roboto-Thin.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node/public/style/fonts/roboto/Roboto-Thin.woff2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node/public/style/fonts/roboto/Roboto-Thin.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node/public/style/fonts/MaterialIcons-Regular.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node/public/style/fonts/roboto/Roboto-Bold.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node/public/style/fonts/roboto/Roboto-Light.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node/public/style/fonts/roboto/Roboto-Medium.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node/public/style/fonts/roboto/Roboto-Regular.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node/public/style/fonts/roboto/Roboto-Thin.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node/public/index2.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node/public/style/main.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node/public/style/thirdparty/materialize.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node/public/js/lib/materialize.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node/public/style/thirdparty/materialize.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node/public/js/lib/materialize.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node/public/js/app/account.js" afterPath="$PROJECT_DIR$/node/public/js/app/account.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node/public/js/admin.js" afterPath="$PROJECT_DIR$/node/public/js/admin.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node/app.js" afterPath="$PROJECT_DIR$/node/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node/public/js/app/app.js" afterPath="$PROJECT_DIR$/node/public/js/app/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node/public/js/app/screen/baseScreen.js" afterPath="$PROJECT_DIR$/node/public/js/app/screen/baseScreen.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node/public/js/app/screen/chatScreen.js" afterPath="$PROJECT_DIR$/node/public/js/app/screen/chatScreen.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node/public/js/app/view/chatView.js" afterPath="$PROJECT_DIR$/node/public/js/app/view/chatView.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node/public/js/app/view/chatsView.js" afterPath="$PROJECT_DIR$/node/public/js/app/view/chatsView.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node/public/js/app/view/contactView.js" afterPath="$PROJECT_DIR$/node/public/js/app/view/contactView.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node/public/js/app/screen/contactsScreen.js" afterPath="$PROJECT_DIR$/node/public/js/app/screen/contactsScreen.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node/public/js/app/view/contactsView.js" afterPath="$PROJECT_DIR$/node/public/js/app/view/contactsView.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node/public/js/app/db.js" afterPath="$PROJECT_DIR$/node/public/js/app/db.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node/public/index.html" afterPath="$PROJECT_DIR$/node/public/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node/public/js/app/screen/mainScreen.js" afterPath="$PROJECT_DIR$/node/public/js/app/screen/mainScreen.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node/public/js/app/templates.js" afterPath="$PROJECT_DIR$/node/public/js/app/templates.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node/playa.js" afterPath="$PROJECT_DIR$/node/playa.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="burnr.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/style.css" changelist="2fe5221a-53ab-49b4-bc72-7e8b8ea247d2" time="1483681324723" ignored="false" />
     <file path="/index.html" changelist="2fe5221a-53ab-49b4-bc72-7e8b8ea247d2" time="1489757956127" ignored="false" />
-    <file path="/app.js" changelist="2fe5221a-53ab-49b4-bc72-7e8b8ea247d2" time="1489756816310" ignored="false" />
+    <file path="/app.js" changelist="2fe5221a-53ab-49b4-bc72-7e8b8ea247d2" time="1490544114239" ignored="false" />
     <file path="/main.js" changelist="2fe5221a-53ab-49b4-bc72-7e8b8ea247d2" time="1488712223462" ignored="false" />
     <file path="/johnny.html" changelist="2fe5221a-53ab-49b4-bc72-7e8b8ea247d2" time="1483855192860" ignored="false" />
     <file path="/johnny.js" changelist="2fe5221a-53ab-49b4-bc72-7e8b8ea247d2" time="1483855260937" ignored="false" />
-    <file path="/a.dummy" changelist="2fe5221a-53ab-49b4-bc72-7e8b8ea247d2" time="1489757233886" ignored="false" />
+    <file path="/a.dummy" changelist="2fe5221a-53ab-49b4-bc72-7e8b8ea247d2" time="1490541932179" ignored="false" />
     <file path="/icon.css" changelist="2fe5221a-53ab-49b4-bc72-7e8b8ea247d2" time="1484923254669" ignored="false" />
     <file path="/structure.json" changelist="2fe5221a-53ab-49b4-bc72-7e8b8ea247d2" time="1486109496029" ignored="false" />
     <file path="/structure.js" changelist="2fe5221a-53ab-49b4-bc72-7e8b8ea247d2" time="1486118072402" ignored="false" />
@@ -66,7 +27,7 @@
     <file path="$PROJECT_DIR$/../haddock/web/src/js/main.js" changelist="2fe5221a-53ab-49b4-bc72-7e8b8ea247d2" time="1486878137274" ignored="false" />
     <file path="/render.js" changelist="2fe5221a-53ab-49b4-bc72-7e8b8ea247d2" time="1488694523916" ignored="false" />
     <file path="/db.js" changelist="2fe5221a-53ab-49b4-bc72-7e8b8ea247d2" time="1489645901007" ignored="false" />
-    <file path="/Dummy.txt" changelist="2fe5221a-53ab-49b4-bc72-7e8b8ea247d2" time="1489822703409" ignored="false" />
+    <file path="/Dummy.txt" changelist="2fe5221a-53ab-49b4-bc72-7e8b8ea247d2" time="1489822743060" ignored="false" />
     <file path="/test.js" changelist="2fe5221a-53ab-49b4-bc72-7e8b8ea247d2" time="1488268502418" ignored="false" />
     <file path="$PROJECT_DIR$/node/burnr/node_modules/jade/node_modules/uglify-js/node_modules/yargs/README.md" changelist="2fe5221a-53ab-49b4-bc72-7e8b8ea247d2" time="1488265885332" ignored="false" />
     <file path="$PROJECT_DIR$/node/node_modules/serialport/node_modules/node-pre-gyp/node_modules/tar-pack/node_modules/readable-stream/doc/stream.md" changelist="2fe5221a-53ab-49b4-bc72-7e8b8ea247d2" time="1488265885332" ignored="false" />
@@ -101,6 +62,7 @@
     <file path="/contactsScreen.js" changelist="2fe5221a-53ab-49b4-bc72-7e8b8ea247d2" time="1489755987764" ignored="false" />
     <file path="/main.css" changelist="2fe5221a-53ab-49b4-bc72-7e8b8ea247d2" time="1489740568307" ignored="false" />
     <file path="/index2.html" changelist="2fe5221a-53ab-49b4-bc72-7e8b8ea247d2" time="1489737626863" ignored="false" />
+    <file path="/README.md" changelist="2fe5221a-53ab-49b4-bc72-7e8b8ea247d2" time="1490337656329" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -161,10 +123,57 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="contactsScreen.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/node/public/js/app/screen/contactsScreen.js">
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/node/public/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="33" selection-start="438" selection-end="438" vertical-scroll-proportion="0.0">
+            <state line="12" column="75" selection-start="329" selection-end="329" vertical-scroll-proportion="-7.5">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/node/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="62" column="72" selection-start="1349" selection-end="1349" vertical-scroll-proportion="-4.8">
+              <folding>
+                <element signature="e#545#1316#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="playa.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/node/playa.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="0" selection-start="316" selection-end="529" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="db.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/node/public/js/app/db.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="51" column="74" selection-start="1152" selection-end="1152" vertical-scroll-proportion="0.3345725">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="admin.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/node/public/admin.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="58" selection-start="262" selection-end="262" vertical-scroll-proportion="-6.25">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="admin.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/node/public/js/admin.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="130" selection-start="338" selection-end="338" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -173,61 +182,7 @@
       <file leaf-file-name="chatScreen.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/node/public/js/app/screen/chatScreen.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="76" column="34" selection-start="1461" selection-end="1461" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="contactsView.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/node/public/js/app/view/contactsView.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="12" selection-start="621" selection-end="621" vertical-scroll-proportion="0.20877458">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mainScreen.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/node/public/js/app/screen/mainScreen.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="59" column="45" selection-start="1256" selection-end="1256" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="chatView.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/node/public/js/app/view/chatView.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="contactView.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/node/public/js/app/view/contactView.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="12" selection-start="422" selection-end="465" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="baseScreen.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/node/public/js/app/screen/baseScreen.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="8" selection-start="413" selection-end="451" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="events.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/node/public/js/app/events.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="50" column="21" selection-start="813" selection-end="813" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -236,7 +191,7 @@
       <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/node/public/js/app/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="55" column="12" selection-start="819" selection-end="819" vertical-scroll-proportion="0.0">
+            <state line="16" column="27" selection-start="166" selection-end="166" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -245,7 +200,16 @@
       <file leaf-file-name="router.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/node/public/js/app/router.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="18" selection-start="292" selection-end="292" vertical-scroll-proportion="0.0">
+            <state line="20" column="30" selection-start="358" selection-end="358" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="api.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/node/public/js/app/api.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="18" column="27" selection-start="358" selection-end="358" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -269,12 +233,7 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/node/app.js" />
-        <option value="$PROJECT_DIR$/node/public/js/app/account.js" />
-        <option value="$PROJECT_DIR$/node/public/js/app/screen/chatScreen.js" />
-        <option value="$PROJECT_DIR$/node/public/js/app/view/chatView.js" />
         <option value="$PROJECT_DIR$/node/public/js/app/view/chatsView.js" />
-        <option value="$PROJECT_DIR$/node/public/js/app/db.js" />
         <option value="$PROJECT_DIR$/node/public/index2.html" />
         <option value="$PROJECT_DIR$/node/public/style/main.css" />
         <option value="$PROJECT_DIR$/node/public/js/app/screen/contactsScreen.js" />
@@ -285,14 +244,19 @@
         <option value="$PROJECT_DIR$/node/public/js/app/view/contactView.js" />
         <option value="$PROJECT_DIR$/node/public/js/app/screen/mainScreen.js" />
         <option value="$PROJECT_DIR$/node/public/js/app/view/contactsView.js" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/node/public/js/admin.js" />
+        <option value="$PROJECT_DIR$/node/playa.js" />
+        <option value="$PROJECT_DIR$/node/public/js/app/db.js" />
+        <option value="$PROJECT_DIR$/node/app.js" />
       </list>
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
     <option name="x" value="-1" />
-    <option name="width" value="1602" />
-    <option name="height" value="856" />
+    <option name="width" value="1922" />
+    <option name="height" value="1036" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -326,7 +290,7 @@
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
-    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="false" id="Update" />
     <OptionsSetting value="true" id="Status" />
     <OptionsSetting value="true" id="Edit" />
     <ConfirmationsSetting value="0" id="Add" />
@@ -418,80 +382,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="style" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="burnr" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="burnr" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="node" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="style" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="thirdparty" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="burnr" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="burnr" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="node" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="style" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fonts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="burnr" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="burnr" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="node" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -519,66 +409,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="burnr" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="burnr" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="node" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="view" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="burnr" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="burnr" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="node" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="screen" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -638,6 +468,137 @@
       <recent name="$PROJECT_DIR$/node/public/js/app" />
       <recent name="$PROJECT_DIR$/node/public/js" />
     </key>
+  </component>
+  <component name="RestoreUpdateTree">
+    <UpdateInfo date="Moments ago" ActionInfo="_Update">
+      <UpdatedFiles>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Updated from server" />
+          <option name="myStatusName" value="Changed on server" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="CHANGED_ON_SERVER" />
+          <FILE-GROUP>
+            <option name="myUpdateName" value="Updated" />
+            <option name="myStatusName" value="Changed" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" value="UPDATED" />
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/node/app.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/node/package.json</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/node/public/index.html</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/node/public/js/app/app.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/node/public/js/app/router.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/node/public/js/app/screen/baseScreen.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/node/public/js/app/screen/chatScreen.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/node/public/js/app/screen/mainScreen.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/node/public/js/app/screen/registerScreen.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/node/public/js/app/templates.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/node/public/js/app/view/chatView.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/node/public/js/app/view/chatsView.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/node/public/js/main.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/node/public/style/main.css</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/node/public/style/material.css</PATH>
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" value="Created" />
+            <option name="myStatusName" value="Created" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" value="CREATED" />
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/node/playa.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/node/public/js/app/screen/chatsScreen.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/node/public/js/app/screen/mapScreen.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/node/public/js/app/util.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/node/public/js/lib/moment.js</PATH>
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" value="Deleted" />
+            <option name="myStatusName" value="Deleted" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="true" />
+            <option name="myId" value="REMOVED_FROM_REPOSITORY" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" value="Restored" />
+            <option name="myStatusName" value="Will be restored" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" value="RESTORED" />
+          </FILE-GROUP>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Modified" />
+          <option name="myStatusName" value="Modified" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="MODIFIED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Skipped" />
+          <option name="myStatusName" value="Skipped" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="SKIPPED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Merged with conflicts" />
+          <option name="myStatusName" value="Will be merged with conflicts" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="MERGED_WITH_CONFLICTS" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Merged with tree conflicts" />
+          <option name="myStatusName" value="Merged with tree conflicts" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Merged with property conflicts" />
+          <option name="myStatusName" value="Will be merged with property conflicts" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Merged" />
+          <option name="myStatusName" value="Will be merged" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="MERGED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Not in repository" />
+          <option name="myStatusName" value="Not in repository" />
+          <option name="mySupportsDeletion" value="true" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="UNKNOWN" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Locally added" />
+          <option name="myStatusName" value="Locally added" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="LOCALLY_ADDED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Locally removed" />
+          <option name="myStatusName" value="Locally removed" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="LOCALLY_REMOVED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Switched" />
+          <option name="myStatusName" value="Switched" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="SWITCHED" />
+        </FILE-GROUP>
+      </UpdatedFiles>
+    </UpdateInfo>
   </component>
   <component name="RunManager">
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
@@ -776,33 +737,37 @@
       <created>1489552071183</created>
       <updated>1489552071183</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Fix chat query">
+      <created>1489822780424</created>
+      <updated>1489822780424</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="0" width="1602" height="856" extended-state="6" />
+    <frame x="-1" y="0" width="1922" height="1036" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33707866" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26197183" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32957748" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1904762" sideWeight="0.6619718" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15795091" sideWeight="0.66292137" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33802816" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -871,86 +836,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/node/public/index2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="0" selection-start="52" selection-end="322" vertical-scroll-proportion="-6.25">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node/public/style/thirdparty/materialize.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4219" column="11" selection-start="68307" selection-end="68316" vertical-scroll-proportion="-8.6" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node/public/style/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="0" selection-start="1010" selection-end="1010" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node/public/js/app/screen/registerScreen.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="34" selection-start="234" selection-end="242" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node/public/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="88" column="58" selection-start="2575" selection-end="2575" vertical-scroll-proportion="-3.6122448">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node/public/js/app/templates.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="17" selection-start="314" selection-end="314" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node/public/js/app/router.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="18" selection-start="292" selection-end="292" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node/public/js/app/events.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node/public/js/app/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="12" selection-start="819" selection-end="819" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node/public/js/app/screen/mainScreen.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="45" selection-start="1256" selection-end="1256" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node/public/js/app/view/chatView.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node/public/js/app/screen/contactsScreen.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="33" selection-start="438" selection-end="438" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node/public/js/app/view/contactView.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="33" column="12" selection-start="422" selection-end="465" vertical-scroll-proportion="0.0">
@@ -960,21 +845,107 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/node/public/js/app/screen/baseScreen.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="8" selection-start="413" selection-end="451" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node/public/js/app/screen/chatScreen.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="76" column="34" selection-start="1461" selection-end="1461" vertical-scroll-proportion="0.0">
+        <state line="28" column="8" selection-start="413" selection-end="451" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/node/public/js/app/view/contactsView.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="12" selection-start="621" selection-end="621" vertical-scroll-proportion="0.20877458">
+        <state line="38" column="61" selection-start="646" selection-end="646" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="23" selection-start="386" selection-end="386" vertical-scroll-proportion="-8.75">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="20" selection-start="470" selection-end="470" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node/public/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="39" selection-start="371" selection-end="371" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node/public/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="75" selection-start="329" selection-end="329" vertical-scroll-proportion="-7.5">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node/public/js/app/screen/chatScreen.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="50" column="21" selection-start="813" selection-end="813" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node/public/js/admin.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="130" selection-start="338" selection-end="338" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node/public/admin.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="58" selection-start="262" selection-end="262" vertical-scroll-proportion="-6.25">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node/playa.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="0" selection-start="316" selection-end="529" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node/public/js/app/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="27" selection-start="166" selection-end="166" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node/public/js/app/api.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="27" selection-start="358" selection-end="358" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node/public/js/app/router.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="30" selection-start="358" selection-end="358" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="62" column="72" selection-start="1349" selection-end="1349" vertical-scroll-proportion="-4.8">
+          <folding>
+            <element signature="e#545#1316#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node/public/js/app/db.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="51" column="74" selection-start="1152" selection-end="1152" vertical-scroll-proportion="0.3345725">
           <folding />
         </state>
       </provider>

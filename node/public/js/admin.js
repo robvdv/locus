@@ -22,6 +22,9 @@ $(document).ready(function() {
 	that.destroyLocalData = function(parm) {
 		localStorage.clear();
 		indexedDB.deleteDatabase("_pouch_playa");
+
+		//_pouch_validate_websql
+
 		$('#log').html('Destroyed local DB');
 	};
 
