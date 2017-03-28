@@ -63,10 +63,25 @@ var startData = [
 // wherever your db lives
 var DATABASE_URL = 'http://localhost:5984';
 
+/*// middleware itself, preceding any parsers
+app.use(function(req, res, next){
+	var proxy_path = req.path.match(/^\/db(.*)$/);
+	console.log('Received req.path :'  + req.path);
+	if(proxy_path){
+		var db_url = DATABASE_URL + proxy_path[1];
+		console.log("Transposed to: " + db_url)
+		req.pipe(request({
+			uri: db_url,
+			method: req.method
+		})).pipe(res);
+	} else {
+		next();
+	}
+});*/
+
 var httpProxy = require('http-proxy'),
 	HttpProxyRules = require('http-proxy-rules');
 
-// proxy /db requests to couchdb port otherwise send to the express app
 var proxyRules = new HttpProxyRules({
 	rules: {
 		'/db': 'http://localhost:5984'
@@ -74,17 +89,10 @@ var proxyRules = new HttpProxyRules({
 	default: 'http://localhost:8080' // default target -> must point to express app port
 });
 
-// proxy https requests down to the next proxy running on port 9080
-var proxy = httpProxy.createProxy();
-httpProxy.createServer({
-	target: {
-		host: 'localhost',
-		port: 9080
-	},
-	ssl: credentials
-}).listen(443);
+//httpProxy.createProxyServer({target:'http://localhost:5984'}).listen(5985);
 
-// listen to http on port 9080 and use the proxy rules to proxy down to the app or to couchdb
+var proxy = httpProxy.createProxy();
+
 http.createServer(function(req, res) {
 
 	// a match method is exposed on the proxy rules instance
@@ -98,7 +106,7 @@ http.createServer(function(req, res) {
 
 	res.writeHead(500, { 'Content-Type': 'text/plain' });
 	res.end('The request url and path did not match any of the listed rules!');
-}).listen(9080);
+}).listen(80);
 
 
 var db = nano.db.use('playa');
@@ -240,12 +248,16 @@ function serialConnect() {
 
 serialConnect();
 
-// redirect all port 80 traffic to https on port 443
-var httpServer = http.createServer(function (req, res) {
+/*var httpServer = http.createServer(function (req, res) {
 	//res.writeHead(301, { "Location": "https://" + req.headers['host'] + req.url });
-	res.writeHead(301, { "Location": "https://" + req.headers['host'] + ":443" });
+	res.writeHead(301, { "Location": "https://localhost:443" });
 	res.end();
 }).listen(80);
 
+var httpsServer = https.createServer(credentials, app);*/
+
+//httpsServer.listen(443);
+
 app.use(express.static(__dirname + '/public'));
+//app.listen(port);
 app.listen(8080);

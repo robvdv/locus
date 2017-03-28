@@ -26,17 +26,14 @@ function (
 
 		that.dbLocal = new PouchDB('playa');
 		//that.dbRemote = new PouchDB('http://localhost:5984/playa');
-		that.dbRemote = new PouchDB(window.location.protocol + "//" + window.location.hostname + ':5984/playa');
-		//that.dbRemote = new PouchDB(window.location.protocol + "//" + window.location.hostname + '/db/playa');
+		//that.dbRemote = new PouchDB(window.location.protocol + "//" + window.location.hostname + ':5984/playa');
+		that.dbRemote = new PouchDB(window.location.protocol + "//" + window.location.hostname + '/db/playa');
 
 		Backbone.Model.prototype.idAttribute = '_id';
 
 		that.startSync();
 		events.trigger('db:ready', {db: that.dbLocal});
 	};
-
-	events.on('user:loggedIn', that.init);
-	events.on('db:recreate', that.recreate);
 
 	that.getId = function() {
 		return 'mac' + new Date().getTime() + performance.now();

@@ -55,14 +55,10 @@ function (
             if (callback) callback.apply(this, args);
         }
     });
-/*
-	events.on('user:registered', function() {
-		router.navigate('main', {trigger: true, replace: true});
-	});
 
 	events.on('user:registered', function() {
-		router.navigate('main', {trigger: true, replace: true});
-	});*/
+		router.navigate('contacts', {trigger: true, replace: true});
+	});
 
 	return router;
 });

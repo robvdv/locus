@@ -19,7 +19,8 @@ function (
 
 	that.init = function() {
 		window.app = that;
-		events.on('user:loggedIn', that.loggedIn);
+		db.init();
+/*		events.on('user:loggedIn', that.loggedIn);
 		if (account.isUserLoggedIn()) {
 			events.trigger('user:loggedIn');
 		} else {
@@ -28,7 +29,30 @@ function (
 
 		if (navigator.vibrate) {
 			navigator.vibrate(1000);
-		}
+		}*/
+		require([
+			'app/screen/registerScreen',
+			'app/screen/mainScreen',
+			'app/screen/adminScreen',
+			'app/screen/contactsScreen',
+			'app/screen/chatScreen',
+			'app/screen/chatsScreen',
+			'app/screen/mapScreen'
+		],
+			function (
+				registerScreen,
+				mainScreen,
+				adminScreen,
+				contactsScreen,
+				chatScreen,
+				chatsScreen,
+				mapScreen
+				)
+			{
+				that.startBackboneHistory();
+			}
+		);
+
 	};
 
 	that.startBackboneHistory = function() {
@@ -36,7 +60,7 @@ function (
 			Backbone.history.start();
 		}
 	};
-
+/*
 	that.notLoggedIn = function() {
 		require([
 			'app/screen/registerScreen'
@@ -74,7 +98,7 @@ function (
 				    that.startBackboneHistory();
 			}
 		);
-	};
+	};*/
 
 
 	return that;

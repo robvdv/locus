@@ -19,7 +19,6 @@ function (
 		register: function(event) {
 			event.stopPropagation();
 			account.userRegister(this.serialize());
-            window.location.hash = 'contacts';
 			return false;
 		},
 
@@ -33,6 +32,14 @@ function (
 	});
 
 	var that = new registerScreen();
+
+	that.onShow = function() {
+		if (account.isUserLoggedIn()) {
+			window.location.hash = 'contacts';
+		} else {
+			window.location.hash = 'register';
+		}
+	};
 
 	that.name = 'register';
 	baseScreen.registerScreen(that);
