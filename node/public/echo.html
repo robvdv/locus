@@ -1,0 +1,53 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <script src="js/lib/jquery-3.1.1.js"></script>
+
+  <script>
+
+    var makeUrl = function(urlOffset) {
+      return window.location.protocol + '//' + window.location.host + '/api/' + urlOffset;
+    };
+
+    var get = function(urlOffset, data, successCallback) {
+      var request = $.ajax({
+        url: makeUrl(urlOffset),
+        method: 'GET',
+        data: data
+      });
+      request.done(function(data, textStatus, jqXHR) {
+        $('#status').html(textStatus);
+        successCallback(data, textStatus, jqXHR);
+      });
+      request.fail(function(jqXHR, textStatus, errorThrown) {
+        $('#status').html(textStatus + ' : ' + errorThrown);
+      });
+    };
+
+    setInterval(function() {
+      var time = new Date().getTime();
+      $('#sent').html(time);
+      get('echo/' + time, time, function(data) {
+        $('#received').html(data);
+      })
+    }, 1000);
+  </script>
+
+</head>
+
+<body style="font-size: 2em;">
+
+<h3>Echo service</h3>
+
+<h4>Last sent</h4>
+<div id="sent"></div>
+<h4>Last received</h4>
+<div id="received"></div>
+<h4>Last status</h4>
+<div id="status"></div>
+
+</body>
+</html>

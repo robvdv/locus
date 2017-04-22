@@ -9,9 +9,15 @@ var express = require('express'),
 var https = require('https');
 var http = require('http');
 
-var privateKey  = fs.readFileSync('ssl/privkey.pem', 'utf8');
-var certificate = fs.readFileSync('ssl/cert.pem', 'utf8');
-var credentials = {key: privateKey, cert: certificate};
+var privateKey  = fs.readFileSync(__dirname + '/ssl/privkey.pem', 'utf8');
+var certificate = fs.readFileSync(__dirname + '/ssl/cert.pem', 'utf8') + fs.readFileSync(__dirname + '/ssl/chain.pem', 'utf8');
+//var certificate = fs.readFileSync('ssl/fullchain.pem', 'utf8');
+//var ca = fs.readFileSync('ssl/chain.pem', 'utf8');
+var credentials = {
+	key: privateKey,
+	cert: certificate,
+	ca: null
+};
 
 var state = {};
 
@@ -105,6 +111,17 @@ var db = nano.db.use('playa');
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
+
+
+app.get('/api/echo*', function (req, res, next) {
+
+	nano.db.destroy('playa', function() {
+		//res.send( req.body );
+		var parsedReq = req.url.split('/');
+		res.send( parsedReq[ parsedReq.length - 1 ] );
+	});
+
+});
 
 app.get('/api/msg', function (req, res, next) {
 	res.send(JSON.stringify({
@@ -227,7 +244,7 @@ function serialConnect() {
 					console.log('Serial Port Opened');
 					serialOpen.on('data', function(data){
 						state.stepper.angle = String.fromCharCode.apply(null, data);
-						console.log( 'Stepper angle: ' + state.stepper.angle );
+						//console.log( 'Stepper angle: ' + state.stepper.angle );
 					});
 				});
 

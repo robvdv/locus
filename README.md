@@ -20,7 +20,7 @@ npm install
 
 [httpd]
 port = 5984
-bind_address = 192.168.1.40
+bind_address = 0.0.0.0
 ; Options for the MochiWeb HTTP server.
 ;server_options = [{backlog, 128}, {acceptor_pool_size, 16}]
 ; For more socket options, consult Erlang's module 'inet' man page.
@@ -29,3 +29,8 @@ enable_cors = true
 
 [cors]
 origins = *
+
+sudo crontab -e
+nano /etc/rc.local
+/etc/init.d/cron start
+* * * * * su pi -c "/home/pi/locus/restartlocus.sh >> /home/pi/cronlocus.log"

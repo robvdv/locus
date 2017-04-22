@@ -27,6 +27,9 @@ function (
 			var that = this;
 			events.on('chat:change', function(data) {
 				that.add(data.add);
+				if (navigator.vibrate) {
+					navigator.vibrate(1000);
+				}
 			});
 		},
 
