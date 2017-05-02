@@ -22,8 +22,8 @@ unsigned long last_time;
 unsigned long currentMillis ;
 long stepsPerRevolution = 4095;
 long steps_left=4095;
-float rpm = 0.5;
-int maxAngle = 120;
+float rpm = 0.25;
+int maxAngle = 360;
 long time;
 
 // calculated vars
@@ -91,7 +91,7 @@ void loop()
     }
   }
 
-  Direction=!Direction;
+  //Direction=!Direction;
  
 }
 

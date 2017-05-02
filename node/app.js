@@ -260,7 +260,8 @@ serialConnect();
 // redirect all port 80 traffic to https on port 443
 var httpServer = http.createServer(function (req, res) {
 	//res.writeHead(301, { "Location": "https://" + req.headers['host'] + req.url });
-	res.writeHead(301, { "Location": "https://" + req.headers['host'] + ":443" });
+	//res.writeHead(301, { "Location": "https://" + req.headers['host'] + ":443" });
+	res.writeHead(301, { "Location": "https://playa.zone:443" });
 	res.end();
 }).listen(80);
 
